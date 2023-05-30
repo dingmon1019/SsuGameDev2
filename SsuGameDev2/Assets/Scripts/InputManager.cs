@@ -16,8 +16,10 @@ public class InputManager : MonoBehaviour
     private Sign player1Choice = Sign.None;
     private Sign player2Choice = Sign.None;
 
-    private int player1Energy = 0;
-    private int player2Energy = 0;
+    public int player1Energy = 0;
+    public int player2Energy = 0;
+
+    public int a = 0;       //energy_state
 
     void Start()
     {
@@ -151,6 +153,7 @@ public class InputManager : MonoBehaviour
         }
 
 
+        a++;
         ResetChoices();
     }
 
